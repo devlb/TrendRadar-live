@@ -1,1 +1,18 @@
-# 不按关键词筛选，展示所有热点。
+# 关注：AI、科技、互联网产品、独立开发、出海、新产品
+# 使用关键词过滤，不调用 AI。英文词使用边界匹配，避免误命中。
+[GLOBAL_FILTER]
+/八卦|绯闻|饭圈|塌房|恋情曝光|明星离婚|演唱会|综艺|选秀|饭拍/
+/世界杯|欧冠|中超|英超|西甲|德甲|意甲|法甲|足球|篮球|乒乓球|羽毛球|网球|奥运|全运会|金牌|夺冠|\bNBA\b|\bCBA\b/
+
+[WORD_GROUPS]
+# AI 与 AI 工具
+/\bAI\b|人工智能|大模型|生成式|智能体|\bLLM[s]?\b|\bGPT[\w-]*|ChatGPT|OpenAI|Claude|Anthropic|Gemini|DeepSeek|通义|千问|豆包|文心|Kimi|智谱|MiniMax|Midjourney|Stable Diffusion|ComfyUI|Cursor|Codex|Copilot|Ollama|Hugging Face|机器学习|深度学习|多模态|提示词|文生图|文生视频|语音合成|AI编程|AI 编程/ => AI 与工具
+
+# 科技与互联网产品
+/科技|芯片|半导体|英伟达|NVIDIA|AMD|台积电|光刻|算力|GPU|CPU|机器人|量子计算|开源|软件|操作系统|浏览器|数据库|云计算|云服务|网络安全|网络攻击|数据泄露|互联网|苹果|华为|小米|微软|谷歌|Google|Microsoft|Apple|Meta|字节|腾讯|阿里|鸿蒙|安卓|Android|iOS|macOS|Windows|GitHub|开发者|开发工具|编程|程序员|API|SDK|Flutter|React|应用商店|App Store/ => 科技与互联网
+
+# 独立开发与出海
+/独立开发|独立创客|一人公司|个人开发者|超级个体|出海|跨境|海外市场|全球化|国际化|本地化|SaaS|MicroSaaS|indie hacker|indiehackers|solopreneur|bootstrapp|side project|Stripe|Paddle|RevenueCat|AdMob|AppLovin|Shopify|SEO|ASO|增长黑客|用户增长|产品增长|订阅收入|\bMRR\b|\bARR\b/ => 独立开发与出海
+
+# 新产品与创业
+/Product Hunt|ProductHunt|新产品|新品发布|产品发布|产品上线|产品更新|应用上线|应用发布|新工具|新应用|新功能|公测|内测|创业|初创|创始人|融资|startup|launch|new app|new tool|new product|productivity|developer tool/ => 新产品与创业
